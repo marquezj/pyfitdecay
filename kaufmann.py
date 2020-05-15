@@ -42,8 +42,8 @@ def Cmax(N):
     return max([factorial(N)/(factorial(i)*factorial(N-i)) for i in range(N+1)])
 
 def ComputeAlphaBeta(N,a,b):
-    alpha = np.zeros((N+1,Cmax(N)+1))
-    beta = np.zeros((N+1,Cmax(N)+1))
+    alpha = np.zeros((N+1,int(Cmax(N))+1))
+    beta = np.zeros((N+1,int(Cmax(N))+1))
     sum_a = np.sum(a)
     beta[0][1] = 1
     alpha[0][1] = sum_a

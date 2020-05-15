@@ -36,7 +36,7 @@
 import itertools
 import numpy as np
 import scipy.optimize as opt
-from scipy.misc import factorial
+from scipy.special import factorial
 
 def Cmax(N):
     return max([factorial(N)/(factorial(i)*factorial(N-i)) for i in range(N+1)])
